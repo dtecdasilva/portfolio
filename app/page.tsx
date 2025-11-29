@@ -80,6 +80,7 @@ export default function Home() {
   const theme = isDark ? darkTheme : lightTheme;
 
   return (
+    <main>
     <div className={`min-h-screen ${theme.bg} ${theme.text} transition-colors duration-300 font-sans`}>
       {/* Navigation */}
       <nav className={`fixed top-0 w-full z-50 ${theme.card} border-b ${theme.border} backdrop-blur-lg bg-opacity-80`}>
@@ -237,5 +238,6 @@ export default function Home() {
         <p className={theme.textSecondary}>© 2025 Nadine — Designed and built with Love.</p>
       </footer>
     </div>
+    </main>
   );
 }
